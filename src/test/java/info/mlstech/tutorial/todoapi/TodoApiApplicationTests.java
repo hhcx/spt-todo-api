@@ -24,7 +24,7 @@ class TodoApiApplicationTests {
 	public void testTodoOk() throws URISyntaxException {
 
 		RestTemplate restTemplate = new RestTemplate();
-		final String baseUrl = "http://localhost:"+randomServerPort+"/ok";
+		final String baseUrl = "http://localhost:"+randomServerPort+"/todo/ok";
 		URI uri = new URI(baseUrl);
 
 		ResponseEntity<String> result = restTemplate.getForEntity(uri, String.class);
